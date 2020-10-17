@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(229, 57%, 11%);
+    color: white;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 14px;
+}
+
+p{
+    padding: 25px 25px 4px;
+}
+.fylo{
+        background-color: hsl(228, 56%, 26%);
+        width: 220px;
+        height: 170px;
+        border-radius: 6px 70px 6px 6px;
+}
+.content{
+    background-color: hsl(228, 56%, 26%);
+    width: 600px;
+    height: 130px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 1px hsl(228, 56%, 26%);
+}
+.icon{
+    padding: 7px;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.fill{
+    border-radius: 10px;
+    width: 500px;
+    background-color: hsl(229, 57%, 11%);
+    height: 20px;
+    margin: 10px 25px;
+}
+.filler{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%)
+    );
+    border-radius: 10px;
+    width: 350px;
+    height: 20px;
+}
+.pointer{
+    background-color: white;
+    border-radius: 9px;
+    width: 15px;
+    height: 15px;
+}
+.right{
+    float: right;
+    margin-top: 2px;
+    margin-right: 25px;
+}
+.left{
+    display: inline-block;
+    text-align: left;
+    margin-top: 2px;
+    margin-left: 30px;
+    
+}
+.tooltip{
+   
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+    border-radius: 10px;
+    
+}
+.tooltip p {
+    font-size: 25px;
+    font-weight: 700;
+}
+.tooltip span{
+    font-weight: 100;
+    font-size: 14px;
+}
+.attribution{ 
+    font-size: 11px;
+    display: block;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 1439px){
+    .container{
+        margin: 200px auto 10px;
+        position: relative;
+        bottom: 0;
+        background-image: url("images/bg-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+    }
+    .content{
+        margin: 0 10px;
+        position: relative;
+        top: -70px;
+    
+    }
+    .fylo{
+        position: relative;
+        top: -105px;
+        margin-left: 150px ;
+    }
+    .pointer{
+        position: absolute;
+        right: 220px;
+    }
+    .tooltip{
+         position: fixed;
+         top: 100px;
+         left: 780px;
+         width: 150px;
+         height: 80px;
+    }
+}
+@media only screen and (max-width: 1440px) and (min-width: 375px){
+    .container{
+        max-width: 400px;
+        height: 100vh;
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        margin: auto;
+        padding: 80px 0 ;
+    }
+    .fylo{
+        width: 310px;
+        height: 180px;
+        margin: 20px 30px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+    .content{
+        width: 310px;
+        font-size: 14px;
+        height: 170px;
+        margin: auto 30px;
+    }
+.filler{
+    width: 200px;
+    margin-bottom: 50px;
+}
+.fill{
+    width: 250px;
+}
+.pointer{
+    float: right;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+.tooltip{
+    width: 150px;
+    height: 70px;
+    margin: 10px auto;
+}
+.icon{
+    margin-left: 15px;
+}
+}
